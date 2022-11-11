@@ -9,6 +9,6 @@
 import Foundation
 
 public struct PrayerTime {
-    let prayer: Prayer
-    let date: Date
+    public let prayer: Prayer
+    public let date: Date
 }
