@@ -73,6 +73,7 @@ public class PrayerTimes {
         var tempMap = [Prayer: Date]()
 
         tempMap[.sunrise] = cal.date(from: solarTime.sunrise)
+        tempMap[.sunset] = cal.date(from: solarTime.sunset)
         tempMap[.maghrib] = cal.date(from: solarTime.sunset)
         tempMap[.dhuhr] = cal.date(from: solarTime.transit)
 
