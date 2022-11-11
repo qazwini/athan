@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8B74F4261EF54FCB006A51EE"
-               BuildableName = "Adhan.framework"
+               BuildableName = "Athan.framework"
                BlueprintName = "Athan-watchOS"
                ReferencedContainer = "container:Athan.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B74F4261EF54FCB006A51EE"
-            BuildableName = "Adhan.framework"
+            BuildableName = "Athan.framework"
             BlueprintName = "Athan-watchOS"
             ReferencedContainer = "container:Athan.xcodeproj">
          </BuildableReference>
@@ -60,7 +60,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B74F4261EF54FCB006A51EE"
-            BuildableName = "Adhan.framework"
+            BuildableName = "Athan.framework"
             BlueprintName = "Athan-watchOS"
             ReferencedContainer = "container:Athan.xcodeproj">
          </BuildableReference>

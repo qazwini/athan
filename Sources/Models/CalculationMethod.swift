@@ -182,4 +182,23 @@ public enum CalculationMethod: String, Codable, CaseIterable {
             return CalculationParameters(fajrAngle: 0, ishaAngle: 0, method: self)
         }
     }
+    
+    public var description: String {
+        switch self {
+        case .muslimWorldLeague:     return "Muslim World League"
+        case .egyptian:              return "Egyptian General Authority of Survey"
+        case .karachi:               return "University of Islamic Sciences, Karachi"
+        case .ummAlQura:             return "Umm al-Qura University, Mecca"
+        case .dubai:                 return "UAE"
+        case .moonsightingCommittee: return "Moonsighting Committee"
+        case .northAmerica:          return "ISNA"
+        case .kuwait:                return "Kuwait"
+        case .qatar:                 return "Qatar"
+        case .singapore:             return "Singapore"
+        case .tehran:                return "Tehran University"
+        case .jafari:                return "Jafari"
+        case .turkey:                return "Dianet"
+        case .other:                 return "Custom"
+        }
+    }
 }

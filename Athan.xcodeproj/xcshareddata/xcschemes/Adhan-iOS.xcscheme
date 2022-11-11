@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84F8E11E1C7AB542004C48D7"
-               BuildableName = "Adhan.framework"
+               BuildableName = "Athan.framework"
                BlueprintName = "Athan-iOS"
                ReferencedContainer = "container:Athan.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84F8E11E1C7AB542004C48D7"
-            BuildableName = "Adhan.framework"
+            BuildableName = "Athan.framework"
             BlueprintName = "Athan-iOS"
             ReferencedContainer = "container:Athan.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84F8E11E1C7AB542004C48D7"
-            BuildableName = "Adhan.framework"
+            BuildableName = "Athan.framework"
             BlueprintName = "Athan-iOS"
             ReferencedContainer = "container:Athan.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84F8E11E1C7AB542004C48D7"
-            BuildableName = "Adhan.framework"
+            BuildableName = "Athan.framework"
             BlueprintName = "Athan-iOS"
             ReferencedContainer = "container:Athan.xcodeproj">
          </BuildableReference>
