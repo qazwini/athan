@@ -12,7 +12,7 @@ public struct PrayerTime {
     public let prayer: Prayer
     public let date: Date
     
-    init(prayer: Prayer, date: Date) {
+    public init(prayer: Prayer, date: Date) {
         self.prayer = prayer
         self.date = date
     }
