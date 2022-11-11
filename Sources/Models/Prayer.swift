@@ -32,4 +32,6 @@ public enum Prayer: CaseIterable {
     case asr
     case maghrib
     case isha
+    case midnight
+    case twoThirdNight
 }

@@ -78,4 +78,8 @@ public struct CalculationParameters: Codable, Equatable {
             return (self.fajrAngle / 60, self.ishaAngle / 60)
         }
     }
+    
+    public func encode(to encoder: Encoder) throws {
+        <#code#>
+    }
 }

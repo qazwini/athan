@@ -33,13 +33,39 @@ public struct PrayerAdjustments: Codable, Equatable {
     public var asr: Minute
     public var maghrib: Minute
     public var isha: Minute
+    public var midnight: Minute
+    public var twoThirdNight: Minute
 
-    public init(fajr: Minute = 0, sunrise: Minute = 0, dhuhr: Minute = 0, asr: Minute = 0, maghrib: Minute = 0, isha: Minute = 0) {
+    public init(
+        fajr: Minute = 0,
+        sunrise: Minute = 0,
+        dhuhr: Minute = 0,
+        asr: Minute = 0,
+        maghrib: Minute = 0,
+        isha: Minute = 0,
+        midnight: Minute = 0,
+        twoThirdNight: Minute = 0
+    ) {
         self.fajr = fajr
         self.sunrise = sunrise
         self.dhuhr = dhuhr
         self.asr = asr
         self.maghrib = maghrib
         self.isha = isha
+        self.midnight = midnight
+        self.twoThirdNight = twoThirdNight
+    }
+    
+    func fromPrayer(_ prayer: Prayer) -> Minute {
+        switch prayer {
+        case .fajr:          return fajr
+        case .sunrise:       return sunrise
+        case .dhuhr:         return dhuhr
+        case .asr:           return asr
+        case .maghrib:       return maghrib
+        case .isha:          return isha
+        case .midnight:      return midnight
+        case .twoThirdNight: return twoThirdNight
+        }
     }
 }

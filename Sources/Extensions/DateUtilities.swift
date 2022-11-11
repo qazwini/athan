@@ -48,6 +48,19 @@ internal extension Date {
 
         return cal.date(from: components) ?? self
     }
+    
+    func adjusting(days: Int) -> Date {
+        return Calendar.gregorianUTC.date(byAdding: .day, value: days, to: self)!
+    }
+    
+    var dayAfter: Date {
+        return adjusting(days: 1)
+    }
+    
+    var dayBefore: Date {
+        return adjusting(days: -1)
+    }
+    
 }
 
 internal extension DateComponents {
@@ -82,4 +95,5 @@ internal extension Calendar {
         cal.timeZone = utc
         return cal
     }()
+    
 }
