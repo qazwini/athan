@@ -4,25 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "Adhan",
+    name: "Athan",
     products: [
         .library(
-            name: "Adhan",
-            targets: ["Adhan"]
+            name: "Athan",
+            targets: ["Athan"]
         )
     ],
     targets: [
         .target(
-            name: "Adhan",
+            name: "Athan",
             path: "Sources",
-            exclude: ["AdhanObjc.swift", "Info.plist"]
-        ),
-        .testTarget(
-            name: "Tests",
-            dependencies: ["Adhan"],
-            path: "Tests",
-            exclude: ["ObjcTests.m", "Info.plist"],
-            resources: [.copy("Resources")]
+            exclude: ["Info.plist"]
         )
     ]
 )

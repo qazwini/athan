@@ -32,7 +32,7 @@ import Foundation
   has the correct timezone set.
  */
 public class PrayerTimes {
-    public let timeMap: [Prayer: Date]
+    public var timeMap: [Prayer: Date]
     
     private let prayers: [Prayer]
     private let coordinates: Coordinates
@@ -50,6 +50,7 @@ public class PrayerTimes {
         self.coordinates = coordinates
         self.date = date
         self.calculationParameters = calculationParameters
+        self.timeMap = [Prayer: Date]()
         
         let cal = Calendar.gregorianUTC
         let dateComp = cal.dateComponents([.year, .month, .day], from: date)
@@ -157,11 +158,11 @@ public class PrayerTimes {
             calculationParameters: calculationParameters,
             calculateMidnight: false
            ),
-           let todayMaghrib = timeMap[.maghrib],
+           let todayMaghrib = tempMap[.maghrib],
            let tomorrowFajr = tomorrowPrayerTimes.timeMap[.fajr] {
             let nightDuration = tomorrowFajr.timeIntervalSince(todayMaghrib)
-            timeMap[.midnight] = todayMaghrib.addingTimeInterval(nightDuration / 2).roundedMinute()
-            timeMap[.twoThirdNight] = todayMaghrib.addingTimeInterval(nightDuration * (2 / 3)).roundedMinute()
+            tempMap[.midnight] = todayMaghrib.addingTimeInterval(nightDuration / 2).roundedMinute()
+            tempMap[.twoThirdNight] = todayMaghrib.addingTimeInterval(nightDuration * (2 / 3)).roundedMinute()
         }
         
         for (prayer, time) in tempMap {
